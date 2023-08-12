@@ -1,21 +1,22 @@
 body{
-
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
+:root{
+    --colorbutton:#2196F3;
+}
+:root{
+    --colorblue: #2196F3;
+}
 button {
-    background-color: #2196F3;
-    color: white;
+    background-color: var(--colorbutton);
 }
 #studio{
-    color: #2196F3;
+    color: var(--colorblue);
 }
 
 #email{
-    color: #2196F3;
+    color: var(--colorblue);
 }
 
 
