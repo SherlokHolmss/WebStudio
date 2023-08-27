@@ -1,22 +1,47 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-:root{
-    --colorbutton:#2196F3;
+:root {
+    --color-blue: #2196F3;
+    --color-background: #2F303A;
+    --color-black: #000000;
+    --color-section-command: #F5F4FA;
+    --color-section-hero : #ECECEC;
+    --color-footer-info: #FFFFFF;
+    --color-h: #212121;
+    --color-p: #757575;
 }
-:root{
-    --colorblue: #2196F3;
-}
+
 button {
-    background-color: var(--colorbutton);
-}
-#studio{
     color: var(--colorblue);
+    color: ;
 }
 
-#email{
-    color: var(--colorblue);
+.navigation-list {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 
+.contacts-list-item {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+
+.container{
+    padding-left: 15 px;
+    padding-right: 15 px;
+    width: 1200px;
+    margin: 0 auto;
+}
