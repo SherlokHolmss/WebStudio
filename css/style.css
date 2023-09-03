@@ -81,8 +81,9 @@ button {
     line-height: 1.8;
     letter-spacing: 0.06em;
     text-align: center;
-
+    
 }
+
 
 .features-list-title {
     font-family: Roboto;
@@ -172,3 +173,13 @@ button {
     text-align: left;
 
 }
+
+.header{
+    background-color: #2196F3;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
