@@ -5,56 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css "
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg =="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Шапка -->
-    <header>
+    <header class="header">
         <div class="container">
-            <a href="#" target="_blank" class="header-logo">WebStudio</a>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-list-item"><a href="" target="_blank" class="navigation-list-item-link">Студія
-                        </a></li>
-                    <li class="navigation-list-item"><a href="" target="_blank"
-                            class="navigation-list-item-link">Портфоліо</a></li>
-                    <li class="navigation-list-item"><a href="" target="_blank"
-                            class="navigation-list-item-link">Контакти</a></li>
+            <div class="header-wrap">
+                <a href="#" target="_blank" class="header-logo">WebStudio</a>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="" target="_blank"
+                                class="navigation-list-item-link">Студія
+                            </a></li>
+                        <li class="navigation-list-item"><a href="" target="_blank"
+                                class="navigation-list-item-link">Портфоліо</a></li>
+                        <li class="navigation-list-item"><a href="" target="_blank"
+                                class="navigation-list-item-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts-list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts-list-item">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="contacts-list-item">+380961111111</a></li>
                 </ul>
-            </nav>
-            <ul class="contacts-list">
-                <li><a href="mailto:info@devstudio.com" class="contacts-list-item">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="contacts-list-item">+380961111111</a></li>
-            </ul>
+            </div>
         </div>
     </header>
 
     <!-- Основа -->
     <main>
         <!-- Герой -->
-        <div class="container">
-            <section class="section-hero">
+
+        <section class="section-hero">
+            <div class="container">
                 <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="section-hero-button">Замовити послугу</button>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- Особливості -->
-        <div class="container">
-            <section class="features">
+        <section class="features">
+            <div class="container">
                 <ul class="features-list">
                     <li class="features-list-item">
                         <h3 class="features-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="features-list-description"> Ідейні міркування, і навіть початок повсякденної роботи з
+                        <p class="features-list-description"> Ідейні міркування, і навіть початок повсякденної
+                            роботи з
                             формування
                             позиції.</p>
                     </li>
@@ -73,27 +78,28 @@
                     </li>
                     <li class="features-list-item">
                         <h3 class="features-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="features-list-dicription"> Значимість цих проблем настільки очевидна, що реалізація
+                        <p class="features-list-dicription"> Значимість цих проблем настільки очевидна, що
+                            реалізація
                             планових
                             завдань.</p>
                     </li>
                 </ul>
-        </div>
+            </div>
         </section>
-        <div class="container">
-            <section class="section-work">
+        <section class="section-work">
+            <div class="container">
                 <h2 class="section-work-title">Чим ми займаємося</h2>
                 <ul>
                     <li class="section-work-item"><img src="./img/11.png" alt="упс" class="work-list-images"></li>
                     <li class="section-work-item"><img src="./img/22.png" alt="упс" class="work-list-images"></li>
                     <li class="section-work-item"><img src="./img/33.png" alt="упс" class="work-list-images"></li>
                 </ul>
-        </div>
+            </div>
         </section>
 
         <!-- Команда -->
-        <div class="container">
-            <section class="section-team">
+        <section class="section-team">
+            <div class="container">
                 <h2 class="section-team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li>
@@ -117,7 +123,7 @@
                         <p class="team-list-description"> UI Designer</p>
                     </li>
                 </ul>
-        </div>
+            </div>
         </section>
     </main>
     <!-- Підвал -->
