@@ -24,29 +24,6 @@ button {
     margin: 0 auto;
 }
 
-/* h / f  */
-
-.header {
-    background-color: var(--color-footer-info);
-    padding: 24px 0;
-}
-
-.header-wrap {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navigation-list {
-    display: flex;
-    gap: 50px;
-}
-
-.contacts-list {
-    display: flex;
-    gap: 50px;
-}
-
 .header-logo {
     font-family: Raleway;
     font-size: 26px;
@@ -54,10 +31,10 @@ button {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #2196F3;
+    color: var(--color-blue);
 }
 
-.header-logo-t:nth-child(3n) {
+.header-logo-t {
     font-family: Oleo Script;
     font-size: 26px;
     font-weight: 400;
@@ -67,17 +44,7 @@ button {
     color: #000000;
 }
 
-.navigation-list-item-link {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-align: left;
-
-}
-
-
+.navigation-list-item-link,
 .contacts-list-item {
     font-family: Roboto;
     font-size: 14px;
@@ -88,10 +55,6 @@ button {
 
 }
 
-.section-hero {
-    background-color: var(--color-background);
-}
-
 .section-hero-title {
     font-family: Roboto;
     font-size: 44px;
@@ -100,9 +63,11 @@ button {
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--color-section-hero);
+    margin: 0;
 }
 
 .section-hero-button {
+
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -111,13 +76,12 @@ button {
     text-align: center;
     background-color: var(--color-blue);
     color: var(--color-section-hero);
-}
 
-.features-wrap {
+}
+.section-hero-list{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .features-list-title {
     font-family: Roboto;
     font-size: 14px;
@@ -128,7 +92,8 @@ button {
 
 }
 
-.features-list-description {
+.features-list-description,
+.address-list-item {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
@@ -138,17 +103,16 @@ button {
 
 }
 
-
-.section-work-title {
+.section-work-title
+{
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
-
+    margin-bottom: 50px;
 }
-
 .section-team-title {
     font-family: Roboto;
     font-size: 36px;
@@ -156,23 +120,10 @@ button {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
-
+    margin: 50px;
 }
-
-.team-list {
-    display: flex;
-
-}
-
-.section-work {
-    display: flex;
-}
-
-.section-hero {
-    margin: 200 auto;
-}
-
-.team-list-title {
+.team-list-title,
+.team-list-description {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -181,17 +132,39 @@ button {
     text-align: center;
 }
 
-.team-list-description {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-align: center;
-
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
+.team-list-images {
+    width: 270px;
+    height: 260px;
 
+}
+.section-work-list{
+    display: flex;
+    gap: 30px;
+}
+.section-work{
+    padding: 94px 0;
+}
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
+.section-hero {
+    padding: 200px 0;
+}
+.features{
+    padding: 94px 0;
+}
+.section-team{
+    padding: 94px 0;
+    background-color: var(--color-section-command);
+}
 .footer-logo {
     font-family: Raleway;
     font-size: 26px;
@@ -199,34 +172,41 @@ button {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: left;
-
-    font-family: Oleo Script;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-align: left;
-
-
-}
-
-
-.address-list-item {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-align: left;
-}
-
-.footer-wrap {
-    display: flex;
-    flex-direction: column;
+    color: var(--color-blue);
 }
 
 .footer {
-    background-color: var(--color-background);
-    padding: 100px;
+    color: var(--color-background);
+    padding: 24px 0;
+}
 
+.section-hero {
+    background-color: var(--color-background);
+}
+
+.navigation-list-item {
+    color: var(--color-footer-info);
+}
+
+.header {
+    background-color: var(--color-footer-info);
+    padding: 24px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    gap: 50px;
+
+}
+
+.contacts-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
 }
