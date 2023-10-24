@@ -187,7 +187,7 @@ button {
 
 .features-list-image-first::before {
     content: "";
-    background-image: url("/img/Group1.png");
+    background-image: url("/img/firstbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -197,7 +197,7 @@ button {
 
 .features-list-image-second::before {
     content: "";
-    background-image: url("/img/Group2.png");
+    background-image: url("/img/secondbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -206,7 +206,7 @@ button {
 }
 .features-list-image-third::before{
     content: "";
-    background-image: url("/img/Group3.png");
+    background-image: url("/img/thirdbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -215,7 +215,7 @@ button {
 }
 .features-list-image-fourth::before{
     content: "";
-    background-image: url("/img/Group4.png");
+    background-image: url("/img/fourthbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
