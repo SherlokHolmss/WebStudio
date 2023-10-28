@@ -187,7 +187,7 @@ button {
 
 .features-list-image-first::before {
     content: "";
-    background-image: url("/img/firstbg.jpg");
+    background-image: url("../img/firstbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -197,7 +197,7 @@ button {
 
 .features-list-image-second::before {
     content: "";
-    background-image: url("/img/secondbg.jpg");
+    background-image: url("../img/secondbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -206,7 +206,7 @@ button {
 }
 .features-list-image-third::before{
     content: "";
-    background-image: url("/img/thirdbg.jpg");
+    background-image: url("../img/thirdbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -215,7 +215,7 @@ button {
 }
 .features-list-image-fourth::before{
     content: "";
-    background-image: url("/img/fourthbg.jpg");
+    background-image: url("../img/fourthbg.jpg");
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -232,6 +232,7 @@ button {
 
 .section-hero {
     padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/sectionherobg.jpg");
 }
 
 .features {
