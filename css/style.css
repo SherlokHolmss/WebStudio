@@ -34,20 +34,25 @@ button {
 
     color: var(--color-black);
 }
+.navigation-list-item-link{
 
-.navigation-list-item-link,
-.contacts-list-item,
-.navigation-list-item {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
-    color: var(--color-h);
+    color: #000000;
 }
-.studio-header-link{
-    color: var(--color-blue);
+.navigation-list-item,
+.contacts-list-item{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #757575;
 }
+
 .section-hero-title {
     font-size: 44px;
     font-weight: 900;
@@ -204,6 +209,7 @@ button {
     background-repeat: no-repeat;
     display: inline-block;
 }
+
 .features-list-image-third::before{
     content: "";
     background-image: url("../img/thirdbg.jpg");
@@ -300,6 +306,6 @@ span {
     gap: 50px;
     margin-left: auto;
 }
-.contacts-list-mail{
-    color: var(--color-blue);
+a:hover{
+    color: #2196F3;
 }
