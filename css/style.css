@@ -125,7 +125,7 @@ button {
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
-    margin: 50px;
+    padding: 50px;
 }
 
 .team-list-title,
@@ -188,6 +188,7 @@ button {
 .features-list {
     display: flex;
     gap: 30px;
+    
 }
 
 .features-list-image-first::before {
@@ -241,10 +242,6 @@ button {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/sectionherobg.jpg");
 }
 
-.features {
-    padding: 94px 0;
-}
-
 .section-team {
     padding: 94px 0;
     background-color: var(--color-section-command);
@@ -278,6 +275,7 @@ span {
 
 .section-hero {
     background-color: var(--color-background);
+    margin-bottom: 94px;
 }
 
 .navigation-list-item {
