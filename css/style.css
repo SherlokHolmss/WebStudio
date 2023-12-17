@@ -354,8 +354,8 @@ button {
 }
 .section-clients-list-item-svg{
     fill: currentColor;
-    width: 94px;
-    height: 41px;
+    width: 106px;
+    height: 60px;
 }
 .section-clients-list-item:hover{
     fill: var(--color-blue);
