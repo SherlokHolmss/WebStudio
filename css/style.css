@@ -34,7 +34,24 @@ button {
 
     color: var(--color-black);
 }
-.navigation-list-item-link{
+.contacts-list-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-p);
+}
+.contact-list-link{
+    color: inherit;
+}
+.contacts-list-link-svg{
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+}
+.contacts-list-item:hover{
+    color: var(--color-blue);
+}
+.navigation-list-item-link {
 
     font-size: 14px;
     font-weight: 500;
@@ -43,8 +60,9 @@ button {
     text-align: left;
     color: #000000;
 }
+
 .navigation-list-item,
-.contacts-list-item{
+.contacts-list-item {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
@@ -103,13 +121,16 @@ button {
     letter-spacing: 0.03em;
     text-align: left;
 }
-.address-list{
+
+.address-list {
     padding-left: 0px;
     padding-top: 20px;
 }
+
 .features-list-description {
     padding-top: 10px;
 }
+
 .section-work-title {
     font-size: 36px;
     font-weight: 700;
@@ -117,6 +138,29 @@ button {
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.section-work-item-wrap {
+    position: relative;
+}
+
+.section-work-item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2F303ACC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
 }
 
 .section-team-title {
@@ -138,13 +182,13 @@ button {
 }
 
 .team-list-title {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-list-item {
     background: var(--color-footer-info);
-    height: 368px;
+    height: 428px;
     border-radius: 0px 0px 2 px 2px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -188,7 +232,7 @@ button {
 .features-list {
     display: flex;
     gap: 30px;
-    
+
 }
 
 .features-list-image-first::before {
@@ -211,7 +255,7 @@ button {
     display: inline-block;
 }
 
-.features-list-image-third::before{
+.features-list-image-third::before {
     content: "";
     background-image: url("../img/thirdbg.jpg");
     width: 270px;
@@ -220,7 +264,8 @@ button {
     background-repeat: no-repeat;
     display: inline-block;
 }
-.features-list-image-fourth::before{
+
+.features-list-image-fourth::before {
     content: "";
     background-image: url("../img/fourthbg.jpg");
     width: 270px;
@@ -229,6 +274,7 @@ button {
     background-repeat: no-repeat;
     display: inline-block;
 }
+
 .features-list-item {
     width: 270px;
     height: 224px;
@@ -247,6 +293,74 @@ button {
     background-color: var(--color-section-command);
 }
 
+.team-icons-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-icons-list-item-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: rgba(174, 177, 184);
+}
+
+.team-icons-list-item-link:hover {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
+.team-icons-list-item-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.section-clients {
+    padding: 94px 0;
+}
+
+.section-clients-title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-clients-list-item {
+    display: flex;
+    flex-basis: calc((100% - 150px) / 6);
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    border-radius: 4px;
+    border: solid 1px;
+    color: rgba(174, 177, 184);
+}
+
+.section-clients-list {
+    display: flex;
+    gap: 30px;
+}
+.section-clients-list-item-link{
+    color: inherit;
+}
+.section-clients-list-item-svg{
+    fill: currentColor;
+    width: 94px;
+    height: 41px;
+}
+.section-clients-list-item:hover{
+    fill: var(--color-blue);
+    border-color:var(--color-blue);
+}
 .footer-logo {
     font-family: Raleway;
     font-size: 26px;
@@ -256,6 +370,48 @@ button {
     text-align: left;
 
     color: #FFFFFF;
+}
+
+.footer-icons-title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.footer-wrap{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.footer-icons-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.footer-icons-list-item-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: #FFFFFF;
+    background-color:#42434d;
+}
+
+.footer-icons-list-item-link:hover {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
+.footer-icons-list-item-svg {
+    width: 20px;
+    height: 20px;
 }
 
 span {
@@ -296,7 +452,7 @@ span {
 .navigation-list {
     display: flex;
     gap: 50px;
-
+    padding-left: 40px;
 }
 
 .contacts-list {
@@ -304,6 +460,7 @@ span {
     gap: 50px;
     margin-left: auto;
 }
-a:hover{
+
+a:hover {
     color: #2196F3;
 }

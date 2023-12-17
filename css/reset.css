@@ -17,7 +17,9 @@ button{
     cursor: pointer;
     
 }
-
+ul{
+    padding-left: 0;
+}
 address{
     font-style: normal;
 }
