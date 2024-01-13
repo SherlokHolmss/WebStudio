@@ -542,13 +542,6 @@ a:hover {
     padding: 6px;
 }
 
-.modal-link-close {
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .modal-button-close {
     width: 30px;
     height: 30px;
