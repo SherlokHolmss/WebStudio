@@ -12,7 +12,14 @@ body {
     --color-h: #212121;
     --color-p: #757575;
 }
-
+@keyframes animation{
+    from{
+        color: black;
+    }
+    to{
+        color: white;
+    }
+}
 button {
     color: var(--colorblue);
 }
@@ -57,15 +64,28 @@ button {
 }
 
 .navigation-list-item-link {
-
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
     color: #000000;
-}
 
+}
+.navigation-list-item-link-current{
+    position: relative;
+}
+.navigation-list-item-link-current::before{
+	content: "";
+	position: absolute;
+	left: 0; 
+    bottom: 0;
+	width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: -33px;
+	background-color: var(--color-blue);
+}
 .navigation-list-item,
 .contacts-list-item {
     font-size: 14px;
@@ -452,6 +472,10 @@ span {
 .header {
     background-color: var(--color-footer-info);
     padding: 24px 0;
+    min-height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .header-wrap {
@@ -648,14 +672,16 @@ a:hover {
     padding: 10px 52px;
 }
 
-.footer-form-div{
+.footer-form-div {
     width: 558px;
 
 }
-.footer-form{
+
+.footer-form {
     display: flex;
     gap: 12px;
 }
+
 .footer-form-button-text {
     font-family: Roboto;
     font-size: 16px;
